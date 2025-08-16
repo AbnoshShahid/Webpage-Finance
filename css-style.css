@@ -1,0 +1,182 @@
+.Background {
+    background-color: #415a77;
+    height: 100vh;    /* 100% of screen height */
+  
+}
+
+
+.Header {
+    background-color: #91d236;
+    color: #f0ebd8;
+    display: flex;
+    justify-content: space-between; /* pushes left & right groups apart */
+    align-items: center;
+    width: 100vw;
+    height: 50px;
+    padding: 0 20px; 
+}
+
+.left {
+    display: flex;
+    gap: 20px; /* spacing between time & phone */
+    align-items: center;
+    padding-left: 85px;
+    
+}
+
+.right {
+    display: flex;
+    gap: 15px; /* spacing between social icons */
+    align-items: center;
+    padding-right: 120px;
+    cursor: pointer; /* makes the icons clickable */
+}
+
+.Banner{
+  position: relative;
+  height: 80vh;
+  background-image: url('../images/Banner.jpg');
+  background-size: cover;
+  background-position: center;
+  
+  background-color: rgba(0,0,0,.45);    /* semi-transparent black overlay */
+  background-blend-mode: multiply;   /* blend the black overlay with the image → darkens the picture */
+}
+
+
+
+/* Header inside Banner */
+.second-header {
+    position: relative;  
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;   /* center the content in a container */
+    margin: 0 auto;      /* centers the whole block */
+    padding: 0 40px;
+    height: 60px;
+}
+
+.brand {
+    color: #ffffff;
+    font-weight: 800;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/* Nav on the right */
+.nav {
+    display: flex;
+    align-items: center;
+    gap: 42px;  
+}
+
+.nav a {
+    position: relative;
+    color: #cfd6df;
+    font-weight: 600;
+    padding: 6px 0;
+    transition: color 0.2s ease;
+    
+}
+
+.nav a:hover {
+    color: #eeeef6;
+}
+
+
+.nav a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -8px; 
+    width: 0;
+    height: 3px;
+    border-radius: 3px;
+    background: #91d236;
+    transition:  0.3s;   
+}
+
+
+.nav a:hover::after {
+    width: 100%;   
+}
+
+/* Active link */
+.nav a.active {
+    color: #a3d65c;
+}
+.nav a.active::after {
+    width: 100%;   /* keep line visible on the active page */
+}
+
+
+
+
+.first-text H4 {
+     color: #50ab29;
+    font-weight: 800;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    padding-left: 220px;
+     
+}
+
+.Second-text h1{
+    color: #ffffff;
+    font-weight: 800;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    padding-left: 220px;
+}
+
+.Second-text p{
+    color: #ebede9;
+    font-weight: 50;
+    letter-spacing: 0.8px;
+    
+    font-family: 'Times New Roman', Times, serif;
+    padding-left: 220px;
+    padding-right: 220px;
+}
+
+
+
+.Button {
+  margin-top: 30px;
+  padding-left: 217px;
+}
+
+.btn {
+  padding: 12px 28px;
+  background: #a3d65c;
+  color: #0b0f14;
+  border: none;
+  border-radius: 25px;
+  font-weight: 700;
+  cursor: pointer;
+  transition:  0.3s ;
+}
+.btn:hover {
+  background: #5a9706; 
+}
+
+.btn:active {
+  background: #bbde8a; 
+}
+
+.footer {
+    background-color: #91d236;
+    color: #edecf0;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: 30PX;
+}
